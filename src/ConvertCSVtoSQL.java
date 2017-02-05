@@ -15,16 +15,16 @@ class ConvertCSVtoSQL
 
     	File inFile = getFileFromSrc("src/MobileContentAuditForDev_012617.csv");
     	List<String[]> rows = readFileIO(inFile);
-    	String outputString = creatSQLFile(rows, 5);
-    	String rollBackString = creatSQLFile(rows, 4);
+    	String updateScriptString = creatSQLFile(rows, 5);
+    	String rollBackScriptString = creatSQLFile(rows, 4);
     	
     	//Update script
     	File outfile = getFileFromSrc("src/update-script.sql");
-    	writeFileIO(outfile, outputString);
+    	writeFileIO(outfile, updateScriptString);
     	
     	//Rollback script
     	File rollbackfile = getFileFromSrc("src/rollback-script.sql");
-    	writeFileIO(rollbackfile, rollBackString);
+    	writeFileIO(rollbackfile, rollBackScriptString);
     }
     
     
