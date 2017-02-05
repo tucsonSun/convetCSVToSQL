@@ -1,0 +1,17 @@
+#
+# Comment out line
+#
+.classpath
+.settings
+
+
+#
+# Bin Settings
+#
+bin/*
+
+
+#
+# Deployment
+#
+/dist
