@@ -9,6 +9,7 @@
 # Bin Settings
 #
 bin/*
+/bin/*
 
 
 #
