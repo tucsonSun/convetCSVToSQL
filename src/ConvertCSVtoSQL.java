@@ -44,7 +44,7 @@ class ConvertCSVtoSQL
         	   // start
         	   outPut = outPut + "--" + row[0] + "\n";
         	   outPut = outPut + "SELECT [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '"+dynamicValueFixed+"', \n";
-        	   outPut = outPut + " WHERE dynamickey = '" + row[1] +"', dynamicForm = '" + row[2] + "', dynamicItem = '" + row[3]+"'; \n";   
+        	   outPut = outPut + " WHERE dynamickey = '" + row[1] +"' AND dynamicForm = '" + row[2] + "' AND dynamicItem = '" + row[3]+"'; \n";   
     	   }
        }
        //System.out.println(outPut);
