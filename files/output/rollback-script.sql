@@ -186,7 +186,7 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
         of constant in-store payments. We&#39;ll help you get approved, treat you fairly and get 
         you into a high quality used vehicle.</p>
     <h3>
-        Buy Here Pay Here? DriveTime? What&#39;s the big difference&#39;</h3>
+        Buy Here Pay Here? DriveTime? What&#39;s the big difference?</h3>
     <p>
         Let&#39;s start with the quality of cars you&#39;ll find on our lots. Where Buy Here Pay
         Here dealers usually sell 5+ year old cars with over 100,000 miles on the clock,
@@ -206,7 +206,7 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
 --500
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '<div class="content-left float-left">
     <h3>
-        Need auto financing and have bad credit history&#39;</h3>
+        Need auto financing and have bad credit history?</h3>
     <p>
         DriveTime offers auto financing to people across the nation with bad credit. We
         have 93+ locations nationwide with over 5000 vehicles available for you to choose
@@ -216,7 +216,7 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
         to our local DriveTime dealership. Bad Credit Auto Financing is really
         that simple with DriveTime.</p>
     <h3>
-        Why buy from DriveTime instead of buy private party with bad credit auto financing&#39;</h3>
+        Why buy from DriveTime instead of buy private party with bad credit auto financing?</h3>
     <p>
         Private party autos may seem less expensive than DriveTime cars, but the savings & experience
         we provide more than make up for the difference in price. The experience
@@ -253,7 +253,7 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
 --501
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '<div class="content-left float-left">
     <h3>
-        Need auto financing and don&#39;t have any credit history&#39;</h3>
+        Need auto financing and don&#39;t have any credit history?</h3>
     <p>
         DriveTime offers auto financing to people across the nation with no credit history.
         We have 93+ locations nationwide with over 5000 vehicles available for you to choose
@@ -262,7 +262,7 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
         our local DriveTime dealership. No Credit Auto Financing is really
         that simple with DriveTime.</p>
     <h3>
-        Why buy from DriveTime instead of buy private party with no credit auto financing&#39;</h3>
+        Why buy from DriveTime instead of buy private party with no credit auto financing?</h3>
     <p>
         Private party autos may seem less expensive than DriveTime cars, but the savings and 
         experience we provide after the sale more than make up for the difference in price. 
@@ -356,7 +356,7 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
 --503
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '<div class="content-left float-left">
     <h3>
-        Need a car and don&#39;t have any credit history&#39;</h3>
+        Need a car and don&#39;t have any credit history?</h3>
     <p>
         DriveTime offers cars to people across the nation with no credit history. We have
         93+ locations nationwide with over 5000 vehicles available for you to choose from.
@@ -366,7 +366,7 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
         our local DriveTime dealership. No Credit Auto Financing is really that
         simple with DriveTime.</p>
     <h3>
-        Why buy from DriveTime instead of buy private party with a no credit car loan&#39;</h3>
+        Why buy from DriveTime instead of buy private party with a no credit car loan?</h3>
     <p>
         Private party cars may seem less expensive than DriveTime cars, but the savings & experience
         we provide more than make up for the difference in price. The experience

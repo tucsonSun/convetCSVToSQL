@@ -42,6 +42,9 @@ class ConvertCSVtoSQL
     	   dynamicValueFixed = fixWhiteSpaceChars(dynamicValueFixed);
     	   
     	   boolean shouldSkipRow = shouldSkipRow(dynamicValueFixed);
+    	   if (shouldSkipRow) {
+    		   System.out.println("Skipped row ="+row[0]);
+    	   }
     	   
     	   if (!shouldSkipRow) {
         	   // start
@@ -83,7 +86,7 @@ class ConvertCSVtoSQL
 		  Character next = charIterator.next();
 		  Character prev = charIterator.perviousValue();
 		  //System.out.println("next='" + next + "'  prev='" + prev + "'");
-		  boolean isNextCharWhiteSpace = (next == ' ');
+		  boolean isNextCharWhiteSpace = (next == ' ') || (next == '<');
 		  if (prev != null && prev == '?' && !isNextCharWhiteSpace) {
 			  sb.replace(sb.length()-1, sb.length(), "&#39;");
 			  sb.append(next);
