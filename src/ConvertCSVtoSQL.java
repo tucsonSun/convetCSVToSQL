@@ -13,17 +13,18 @@ class ConvertCSVtoSQL
     public static void main (String[] args) throws IOException
     {
 
-    	File inFile = getFileFromSrc("src/MobileContentAuditForDev_012617.csv");
+//    	File inFile = getFileFromSrc("src/MobileContentAuditForDev_012617.csv");
+    	File inFile = getFileFromSrc("files/input/MobileContentAuditForDev_012617.csv");
     	List<String[]> rows = readFileIO(inFile);
     	String updateScriptString = creatSQLFile(rows, 5);
     	String rollBackScriptString = creatSQLFile(rows, 4);
     	
     	//Update script
-    	File outfile = getFileFromSrc("src/update-script.sql");
+    	File outfile = getFileFromSrc("files/output/update-script.sql");
     	writeFileIO(outfile, updateScriptString);
     	
     	//Rollback script
-    	File rollbackfile = getFileFromSrc("src/rollback-script.sql");
+    	File rollbackfile = getFileFromSrc("files/output/rollback-script.sql");
     	writeFileIO(rollbackfile, rollBackScriptString);
     }
     
@@ -36,7 +37,9 @@ class ConvertCSVtoSQL
        for(String[] row : allRows){
     	   //System.out.println(Arrays.toString(row));
     	   
-    	   String dynamicValueFixed = fixSingleQuoteSpecialChars(row[dynamicValueIndex]);
+    	   String dynamicValueFixed = null;
+    	   dynamicValueFixed = fixSingleQuoteSpecialChars(row[dynamicValueIndex]);
+    	   dynamicValueFixed = fixWhiteSpaceChars(dynamicValueFixed);
     	   
     	   boolean shouldSkipRow = shouldSkipRow(dynamicValueFixed);
     	   
@@ -59,6 +62,11 @@ class ConvertCSVtoSQL
 			return true;
 		}
 		return false;
+	}
+	
+	public static String fixWhiteSpaceChars(String input) {
+		input = input.replace("ÿ", " ");		
+		return input;
 	}
 	
 	public static String fixSingleQuoteSpecialChars(String input) {
