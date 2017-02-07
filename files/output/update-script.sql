@@ -112,9 +112,6 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
 --174
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = ' Find a Used Vehicle with Car Loan Options at DriveTime' 
  WHERE dynamickey = 'microsites' AND dynamicForm = 'article' AND dynamicItem = 'seo_h2'; 
---500
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used- Intentionally' 
- WHERE dynamickey = 'home-seo' AND dynamicForm = 'bad-credit-auto-financing' AND dynamicItem = 'content'; 
 --929
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Shop for  Used Vans at DriveTime %REGION% | DriveTime' 
  WHERE dynamickey = 'mobile-article-region-article' AND dynamicForm = 'used-van' AND dynamicItem = 'metatitle'; 
