@@ -88,9 +88,6 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
 --184
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '<p>Finding a used car, truck, SUV or van for sale in %REGION% has never been so simple. With over %VEHICLECOUNT% used vehicles in stock for you to choose from, we are confident that we can help you find your next used vehicle. Used car shopping in %REGION% can be difficult with all the options and bogus sales schemes around today, but finding a used car for sale in %REGION% at DriveTime will streamline your experience. </p><p>Our %REGION% Used Car Dealerships offer a used car-buying experience that is second to none. No more pushy salesmen, bait and switch or snake oil programs here. Beware of Buy Here Pay Here dealerships in %REGION%, which advertise a lot and actually deliver a little. Every DriveTime used car goes through a multi-point inspection* before it ever arrives on the lot.</p><p> All these vans and SUVs come with our multi-point inspection* and several post-sale packages to help give you peace of mind. Need a family vehicle in %REGION%? Check out our used SUVs and used Vans available.</p><br>*DriveTime is not able to complete recall repairs, so vehicles may be subject to open recalls.  You can check whether any vehicle is subject to an unrepaired recall at <a href="http://www.safercar.gov/" target="_blank">www.safercar.gov</a></p>' 
  WHERE dynamickey = 'seo-section' AND dynamicForm = 'region-results' AND dynamicItem = 'content'; 
---401
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used- Correctly' 
- WHERE dynamickey = 'car-search' AND dynamicForm = 'index-region-make' AND dynamicItem = 'content'; 
 --301
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '<p>Buying used cars in %REGION% is a simple at DriveTime. Visit our %REGION% DriveTime dealerships today with %VEHICLECOUNT% cars to choose from, many which will fit your needs and desires. </p> <p>Beware of Buy Here Pay Here car lots in %REGION%, who do not offer the same used car dealership experience, the large vehicle selection, or the simple auto loan approvals that DriveTime %REGION% has to offer. DriveTime %REGION% offers auto loans to people of all credit types, including people with bad credit or no credit. Since 2002, we have perfected finding the right used car with suitable auto financing options in a no-hassle, no-pressure used car dealership experience. </p> <p>Our used cars for sale at our %REGION% dealerships arrive at our car lots after they have been through our multi-point inspection* process. All of our used cars in %REGION% and information on our dealership financing options are available to you online, ensuring your purchase from DriveTime %REGION% is the right move for you. </p> <p>Don&#39;t make DriveTime your last resort while looking for used car dealerships in %REGION%, check out our large selection of used cars, trucks, SUVs and vans with great auto financing options today!</p> <br>*DriveTime is not able to complete recall repairs, so vehicles may be subject to open recalls.  You can check whether any vehicle is subject to an unrepaired recall at <a href="http://www.safercar.gov/" target="_blank">www.safercar.gov</a></p>' 
  WHERE dynamickey = 'seo-section' AND dynamicForm = 'dealer-list-regional' AND dynamicItem = 'content'; 
@@ -115,36 +112,9 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
 --174
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = ' Find a Used Vehicle with Car Loan Options at DriveTime' 
  WHERE dynamickey = 'microsites' AND dynamicForm = 'article' AND dynamicItem = 'seo_h2'; 
---498
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used - Intentionally' 
- WHERE dynamickey = 'home-seo' AND dynamicForm = 'used-cars' AND dynamicItem = 'content'; 
---499
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used - Intentionally' 
- WHERE dynamickey = 'home-seo' AND dynamicForm = 'buy-here-pay-here' AND dynamicItem = 'content'; 
 --500
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used- Intentionally' 
  WHERE dynamickey = 'home-seo' AND dynamicForm = 'bad-credit-auto-financing' AND dynamicItem = 'content'; 
---501
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used - Intentionally' 
- WHERE dynamickey = 'home-seo' AND dynamicForm = 'no-credit-auto-financing' AND dynamicItem = 'content'; 
---502
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used - Intentionally' 
- WHERE dynamickey = 'home-seo' AND dynamicForm = 'bad-credit-car-loan' AND dynamicItem = 'content'; 
---503
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used - Intentionally' 
- WHERE dynamickey = 'home-seo' AND dynamicForm = 'no-credit-car-loan' AND dynamicItem = 'content'; 
---504
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used - Intentionally' 
- WHERE dynamickey = 'home-seo' AND dynamicForm = 'car-sales' AND dynamicItem = 'content'; 
---505
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used - Intentionally' 
- WHERE dynamickey = 'home-seo' AND dynamicForm = 'used-vehicles' AND dynamicItem = 'content'; 
---506
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used - Intentionally' 
- WHERE dynamickey = 'home-seo' AND dynamicForm = 'used-car-dealers' AND dynamicItem = 'content'; 
---547
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Not Used - Intentionally' 
- WHERE dynamickey = 'home-seo' AND dynamicForm = 'used-vehicles' AND dynamicItem = 'seo_h2'; 
 --929
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Shop for  Used Vans at DriveTime %REGION% | DriveTime' 
  WHERE dynamickey = 'mobile-article-region-article' AND dynamicForm = 'used-van' AND dynamicItem = 'metatitle'; 

@@ -61,6 +61,12 @@ class ConvertCSVtoSQL
 		if (input.toLowerCase().trim().equals("no change")) {
 			return true;
 		}
+		if (input.toLowerCase().trim().equals("not used - intentionally")) {
+			return true;
+		}
+		if (input.toLowerCase().trim().equals("not used- correctly")) {
+			return true;
+		}
 		return false;
 	}
 	
