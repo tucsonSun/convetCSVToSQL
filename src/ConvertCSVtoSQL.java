@@ -43,7 +43,7 @@ class ConvertCSVtoSQL
     	   if (!shouldSkipRow) {
         	   // start
         	   outPut = outPut + "--" + row[0] + "\n";
-        	   outPut = outPut + "SELECT [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '"+dynamicValueFixed+"', \n";
+        	   outPut = outPut + "UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '"+dynamicValueFixed+"' \n";
         	   outPut = outPut + " WHERE dynamickey = '" + row[1] +"' AND dynamicForm = '" + row[2] + "' AND dynamicItem = '" + row[3]+"'; \n";   
     	   }
        }
