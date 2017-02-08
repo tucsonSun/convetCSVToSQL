@@ -91,11 +91,11 @@ class ConvertCSVtoSQL
 		  //System.out.println("next='" + next + "'  prev='" + prev + "'");
 		  boolean isNextCharWhiteSpace = (next == ' ') || (next == '<');
 		  if (prev != null && prev == '?' && !isNextCharWhiteSpace) {
-			  sb.replace(sb.length()-1, sb.length(), "&#39;");
+			  sb.replace(sb.length()-1, sb.length(), "''");
 			  sb.append(next);
 		  }
 		  else if (next == '\'') {
-			  sb.append("&#39;");
+			  sb.append("''");
 		  }
 		  else {
 			  sb.append(next);  
