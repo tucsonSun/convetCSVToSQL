@@ -14,7 +14,7 @@ class ConvertCSVtoSQL
     {
 
 //    	File inFile = getFileFromSrc("src/MobileContentAuditForDev_012617.csv");
-    	File inFile = getFileFromSrc("files/input/MobileContentAuditForDev_012617_V5.txt");
+    	File inFile = getFileFromSrc("files/input/MobileContentAuditForDev_012617_V3.csv");
     	List<String[]> rows = readFileIO(inFile);
     	String updateScriptString = creatSQLFile(rows, 5);
     	String rollBackScriptString = creatSQLFile(rows, 4);
