@@ -85,7 +85,8 @@ class ConvertCSVtoSQL_Desktop_NONVFT
 	}
 	
 	public static String fixWhiteSpaceChars(String input) {
-		input = input.replace("ÿ", " ");		
+		input = input.replace("ÿ", " ");	
+		input = input.replace(" %REGION%''\",\"", " %REGION%?\",\"");
 		return input;
 	}
 	
