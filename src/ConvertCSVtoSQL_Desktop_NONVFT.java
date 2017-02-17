@@ -29,7 +29,7 @@ class ConvertCSVtoSQL_Desktop_NONVFT
     	writeFileIO(outfile, updateScriptString);
     	
     	//Rollback script
-    	File rollbackfile = getFileFromSrc("files/output/desktop-nonVFT-rollback-script" + str +".sql");
+    	File rollbackfile = getFileFromSrc("files/output/desktop-non-VFT-rollback-script" + str +".sql");
     	writeFileIO(rollbackfile, rollBackScriptString);
     }
     

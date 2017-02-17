@@ -16,7 +16,7 @@ class ConvertCSVtoSQL_Desktop_VFT
     {
 
 //    	File inFile = getFileFromSrc("src/MobileContentAuditForDev_012617.csv");
-    	File inFile = getFileFromSrc("files/input/Desktop Compliance Non VFT CMS Updates.csv");
+    	File inFile = getFileFromSrc("files/input/Desktop Compliance VFT CMS Updates FOR DEV.csv");
     	List<String[]> rows = readFileIO(inFile);
     	String updateScriptString = creatSQLFile(rows, 6);
     	String rollBackScriptString = creatSQLFile(rows, 5);
@@ -25,11 +25,11 @@ class ConvertCSVtoSQL_Desktop_VFT
     	String str = new SimpleDateFormat("MM.dd.yyyy").format(date);
     	
     	//Update script
-    	File outfile = getFileFromSrc("files/output/desktop-non-VFT-update-script" + str +".sql");
+    	File outfile = getFileFromSrc("files/output/desktop-VFT-update-script" + str +".sql");
     	writeFileIO(outfile, updateScriptString);
     	
     	//Rollback script
-    	File rollbackfile = getFileFromSrc("files/output/desktop-nonVFT-rollback-script" + str +".sql");
+    	File rollbackfile = getFileFromSrc("files/output/desktop-VFT-rollback-script" + str +".sql");
     	writeFileIO(rollbackfile, rollBackScriptString);
     }
     
