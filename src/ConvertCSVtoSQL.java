@@ -4,6 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import au.com.bytecode.opencsv.CSVReader;
@@ -19,12 +21,15 @@ class ConvertCSVtoSQL
     	String updateScriptString = creatSQLFile(rows, 5);
     	String rollBackScriptString = creatSQLFile(rows, 4);
     	
+    	Date date = new Date();
+    	String str = new SimpleDateFormat("MM.dd.yyyy").format(date);
+    	
     	//Update script
-    	File outfile = getFileFromSrc("files/output/update-script.sql");
+    	File outfile = getFileFromSrc("files/output/update-script" + str +".sql");
     	writeFileIO(outfile, updateScriptString);
     	
     	//Rollback script
-    	File rollbackfile = getFileFromSrc("files/output/rollback-script.sql");
+    	File rollbackfile = getFileFromSrc("files/output/rollback-script" + str +".sql");
     	writeFileIO(rollbackfile, rollBackScriptString);
     }
     
@@ -62,6 +67,9 @@ class ConvertCSVtoSQL
 			return true;
 		}
 		if (input.toLowerCase().trim().equals("no change")) {
+			return true;
+		}
+		if (input.toLowerCase().trim().equals("not used")) {
 			return true;
 		}
 		if (input.toLowerCase().trim().equals("not used - intentionally")) {
