@@ -1,12 +1,3 @@
---980
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '<p>DriveTime %REGION% offers a simple used car shopping solution for people with less than perfect credit.  Our mission is to provide %REGION% used car shoppers with bad credit or no credit great offers and advantages that cannot be matched by other local %REGION% used car dealers.</p><p>Don''t fall into the trap of Buy Here Pay Here dealerships in %REGION%.  DriveTime offers affordable long-term auto financing solutions to get you into the best used car, truck or SUV possible.  Our used cars in %REGION% have lower mileage and are generally in better condition than what you''ll find available at other %REGION% used car dealers for bad credit or Buy Here Pay Here dealers.</p><p>Getting you back on your feet financially with the used car that you need is only the start of the %REGION% DriveTime Difference.  The used cars, trucks and SUVs that we have in stock are newer models and go through our multi-point inspection* ? something you won''t find at other bad credit / no credit used car dealerships in %REGION%, %ST%</p><p>The entire customer experience at DriveTime in %REGION% is far better than what you''d experience with other local bad credit used car dealerships and buy here pay here lots. We can say that because we have helped over half a million customers get auto loans & quality used vehicles with all of the added benefits of DriveTime. Come into one of our used car dealerships today to learn more about the great programs we have to offer including Rate Advantage to help you buy down your car loan interest rate, our GOLD Referral Program which gives you $200 for each friend you refer to DriveTime, along with several other programs to help you and your used vehicle down the road.</p><p>Schedule a visit at your local %REGION% DriveTime Used Car dealership today!<br />&nbsp;</p><br>*DriveTime is not able to complete recall repairs, so vehicles may be subject to open recalls.  You can check whether any vehicle is subject to an unrepaired recall at <a href="http://www.safercar.gov/" target="_blank">www.safercar.gov</a></p> ' 
- WHERE dynamickey = 'dealership-find-state-region-id' AND dynamicForm = 'default' AND dynamicItem = 'content'; 
---1003
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Find used cars, trucks, vans & SUVs at DriveTime Used Car Dealerships in %REGION%. Simple Financing & Low Prices make DriveTime your %REGION% Used Car Dealer of choice!' 
- WHERE dynamickey = 'dealership-details' AND dynamicForm = 'dealership-find-state-region-id' AND dynamicItem = 'metadescription'; 
---338
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '''Available as ''Renewable Lease? program in Ohio & Illinois.  Illinois Renewable Lease is only renewable for 30 day periods up to one year.' 
- WHERE dynamickey = 'disclaimer' AND dynamicForm = 'veh-search' AND dynamicItem = 'lease-disclaimer'; 
 --232
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Visit the %DEALERCITY% DriveTime dealership to test drive used cars and get financing even with bad or no credit.' 
  WHERE dynamickey = 'seo-section' AND dynamicForm = 'dealer-detail' AND dynamicItem = 'seo_h2'; 
@@ -60,12 +51,6 @@ UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue 
 
 Using our referral program is an easy way to pay off your vehicle early. You can refer your friends and family to DriveTime by filling out our online form, calling 1-877-REFER-DT (1-877-733-3738) or let their sales advisor know you referred them to us.' 
  WHERE dynamickey = 'difference-seo' AND dynamicForm = 'referral' AND dynamicItem = 'content'; 
---982
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'At DriveTime, we value your privacy and protect your information as best we can.  Please read our complete Privacy Policy to understand your rights.' 
- WHERE dynamickey = 'info-privacypolicy' AND dynamicForm = 'default' AND dynamicItem = 'metadescription'; 
---992
-UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = 'Shopping for your next vehicle or getting approved on DriveTime.com comes with a few restrictions and terms of use. Please read these terms to better understand the standards we hold our website to.' 
- WHERE dynamickey = 'info-termsofuse' AND dynamicForm = 'default' AND dynamicItem = 'metadescription'; 
 --786
 UPDATE [dbo].[tblDynamicPage] SET RowUpdatedDateTime = GetDate(),  dynamicValue = '<p>Buying a used car has never been so simple. DriveTime has over %ALLVEHICLECOUNT% used cars in stock for you to choose from, so we are confident that we have the ideal vehicle for you. Used car shopping can be difficult with all the options and bogus sales schemes around today, and we think that shopping for a used car at DriveTime will streamline your experience.
 

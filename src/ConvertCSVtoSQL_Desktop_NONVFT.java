@@ -46,8 +46,8 @@ class ConvertCSVtoSQL_Desktop_NONVFT
     	   dynamicValueFixed = fixSingleQuoteSpecialChars(row[dynamicValueIndex]);
     	   dynamicValueFixed = fixWhiteSpaceChars(dynamicValueFixed);
     	   
-    	   boolean shouldSkipRow = shouldSkipRow(dynamicValueFixed);
-    	   if (shouldSkipRow) {
+    	   boolean shouldSkipRow = shouldSkipRow(row[0]);
+    	   if (shouldSkipRow && row[0].length() > 0) {
     		   System.out.println("Skipped row =" + row[1]);
     	   }
     	   
